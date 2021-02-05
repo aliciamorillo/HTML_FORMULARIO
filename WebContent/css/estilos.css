@@ -1,0 +1,147 @@
+/*--- Styles para formulario ---*/
+
+body { font: 14px Arial; }
+        	
+#formBasico {
+			max-width: 800px;
+			padding: 10px 20px;
+			background: #f4f7f8;
+			margin: 10px auto 40px auto;
+			padding: 20px;
+			background: #f4f7f8;
+			border-radius: 8px;
+			}
+			
+#formBasico form::before { 
+ 			content: "";
+  			display: block; 
+  			clear: both;
+			}
+					
+#formBasico	h1 { 
+			font-size: 50px;
+			text-align: center;
+			margin: 10px auto;
+			background: -webkit-linear-gradient(#61380B, #eee);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+  			}
+  			        	
+#formBasico input,
+#formBasico textarea,
+#formBasico select {
+			background: rgba(255,255,255,.1);
+			border: none;
+			border-radius: 4px;
+			margin: 0;
+			outline: 0;
+			padding: 10px;
+			box-sizing: border-box; 
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box; 
+			background-color: #e8eeef;
+			color:#4f575c;
+			-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+			box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	        }
+	               
+#formBasico label { 
+	        width: 150px; 
+	        display: inline-block;
+	        margin-bottom: 20px;
+			font-weight: bold;
+			color: #61380B;
+			}
+			
+#formBasico label.idiomaslabel { 
+			width: auto; 
+			margin: 0 5px 0 15px;
+			}		
+					
+#formBasico fieldset {
+		    border-radius: 0px 15px 0 15px;
+		    border-color: #b0e0e6;
+		    border-size: 3px;
+		    margin: 10px 0px 50px 0px;
+		    padding:20px 10px;
+	        }
+        		
+#formBasico legend { 
+        	font-size: 20px; 
+        	font-weight: bolder; 
+        	color: #088A85; 
+        	}
+        	
+#formBasico textarea { 
+			vertical-align: top; 
+			resize: none;
+			}			
+					
+#formBasico input[type=file] {
+			background: transparent;
+			box-sizing: none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+	        }
+										
+#formBasico	input[type=radio].radioinput {
+			display: inline-block;
+			margin-right: 5px; 
+			vertical-align: middle;
+			}	
+								
+#formBasico input:focus,
+#formBasico textarea:focus,
+#formBasico select:focus {
+			background: #d2d9dd;
+			}		
+        	
+/* PARA MOZILLA */
+#formBasico input[type=number] {
+    		-moz-appearance:textfield;
+			}
+	        
+/* PARA LOS OTROS */
+#formBasico input[type=number]::-webkit-inner-spin-button, 
+#formBasico input[type=number]::-webkit-outer-spin-button { 
+			 -webkit-appearance: none; 
+			 margin: 0; 
+			 }
+        		
+.btcenter {
+        	text-align: center;			
+        	}
+
+.clearfix:after {
+    		content:"";
+    		display:table;
+    		clear:both;
+			} 
+        			
+#formBasico input.btform, .btform {
+        	background-color: #088A85; 
+        	border-radius: 10px; 
+        	padding: 5px 40px; 
+        	color: #FFF; 
+        	border-color:#b0e0e6;
+        	cursor: pointer;
+        	transition: all 0.5s;
+        	display:inline-block;
+        	transition: background-color .5s;
+        	}
+        	
+#formBasico input.btform:hover , .btform:hover {
+			background-color:#05C0D6; 
+  			background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
+  			background-repeat:no-repeat;
+  			background-size: 200% 100%; 
+  			transition:background-size 1s, background-color 1s;
+  			color:#4f575c;
+			}
+
+#formBasico input.btform:active, .btform:active {
+			background-color:#6bc3ef;
+			transition:background-size 0;
+			color:#4f575c;
+			}   
+
